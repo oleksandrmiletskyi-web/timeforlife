@@ -68,7 +68,7 @@
       <a href="terms_of_service.html">Terms of Service →</a>
     </div>
     <h1>Privacy Policy</h1>
-    <p><strong>Effective date:</strong> October 16, 2026</p>
+    <p><strong>Effective date:</strong> October 17, 2026</p>
     <p>This Privacy Policy applies to the app <strong>Visdap: Visual Day Planner</strong> (formerly named <strong>Time for Life</strong>) on every platform where it is distributed, and explains how it handles your information. It covers:</p>
     <ul>
       <li><strong>Visdap</strong> for Android phones and tablets — Google Play package <code>com.timeforlife.app</code>;</li>
@@ -120,10 +120,19 @@
     <p><strong>Internet and network state.</strong> Used only by Google Play services: Google Play Billing (to show prices and process subscriptions) and the Google Play In-App Review window (to let you rate the app). The app itself makes no other network requests.</p>
 
     <h2>4. Wear OS watch and watch face</h2>
-    <p><strong>Storage.</strong> The watch app keeps the data it receives from your phone, and your watch settings, in its private storage on the watch.</p>
-    <p><strong>Synchronization with your phone.</strong> If you use a Wear OS watch with Visdap, the phone app sends data to your own watch through the Wear OS Data Layer, a connection between your paired devices provided by Google Play services. The data sent is: your language and clock appearance settings, your date of birth and expected lifespan (for the life counter), your deadline projects (names and dates), and today's day sectors and tasks (titles, times, colors, priorities, completion state). The watch can send back new tasks, task completion and watch settings changes. This exchange happens only between your own paired devices; we do not receive any of this data.</p>
+    <p><strong>Storage.</strong> The watch app keeps the data it receives from your phone, and your watch settings, in its private storage on the watch. When your phone is temporarily unreachable, the actions you take on the watch are kept there in a local queue of commands (up to 100 commands, each kept for no longer than 7 days) and are delivered to your phone as soon as it is reachable again.</p>
+    <p><strong>Synchronization with your phone.</strong> If you use a Wear OS watch with Visdap, the phone app sends data to your own watch through the Wear OS Data Layer, a connection between your paired devices provided by Google Play services. The data sent is:</p>
+    <ul>
+      <li>your language and clock appearance settings, your date of birth and expected lifespan (for the life counter), and your deadline projects (names, dates and colors);</li>
+      <li>the day sectors and tasks for today and tomorrow, and for other days when you open them on the watch (titles, times, colors, priorities, repetition, completion state), together with the subtasks of each task (checklist items and their completion state);</li>
+      <li>your day templates (names), so that you can apply one from the watch;</li>
+      <li>the phone app's settings that can be viewed and changed on the watch: theme, language, date of birth, expected lifespan, life counter display, sound and vibration, the evening planning reminder and its time, the checklist display, and the countdown mode (life or a chosen project);</li>
+      <li>the state of the current Pomodoro session (phase, remaining time, pause, round, and the name and color of the selected project);</li>
+      <li>whether you have Visdap Pro, so that the watch shows the same features as the phone.</li>
+    </ul>
+    <p>The watch sends back the commands you give on it: add a task, mark a task done, snooze or move a task, check or uncheck a checklist item, apply a day template, change a phone app setting, and start, pause, resume, skip or stop a Pomodoro session. The watch's tiles and complications show this same data (for example your next task, day progress, days left and the Pomodoro timer) on your watch and watch face. This exchange happens only between your own paired devices; none of this data is sent to our servers or to anyone else, and we do not receive any of it.</p>
     <p><strong>Voice and keyboard input.</strong> When you add a task on the watch, the title is entered through the system input of Wear OS (voice or keyboard). Speech recognition is performed by the system, not by Visdap: the app has no microphone permission, never receives audio and gets only the resulting text.</p>
-    <p><strong>Watch app permissions.</strong> The watch app requests vibration and start-after-reboot permissions, and the Wear OS permissions to install its own 24h watch face on your watch and set it as active when you ask for it (Watch Face Push). It has no internet permission. To buy Pro, the watch can open the Visdap subscription screen on your phone.</p>
+    <p><strong>Watch app permissions.</strong> The watch app requests vibration and start-after-reboot permissions; the notifications permission, which is requested only the first time you start a Pomodoro session and is used only to show the notification of the current session (the Pomodoro timer works without it); and the Wear OS permissions to install its own 24h watch face on your watch and set it as active when you ask for it (Watch Face Push). It has no internet permission. To buy Pro, the watch can open the Visdap subscription screen on your phone.</p>
     <p><strong>Watch face.</strong> The 24h watch face contains no code, requests no permissions and collects nothing.</p>
 
     <h2>5. Windows (Microsoft Store)</h2>
