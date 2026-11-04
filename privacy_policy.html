@@ -69,7 +69,7 @@
       <a href="terms_of_service.html">Terms of Service →</a>
     </div>
     <h1>Privacy Policy</h1>
-    <p><strong>Effective date:</strong> October 30, 2026</p>
+    <p><strong>Effective date:</strong> November 10, 2026</p>
     <p>This Privacy Policy applies to the app <strong>Visdap: Visual Day Planner</strong> (formerly named <strong>Time for Life</strong>) on every platform where it is distributed, and explains how it handles your information. It covers:</p>
     <ul>
       <li><strong>Visdap</strong> for Android phones and tablets — Google Play package <code>com.timeforlife.app</code>;</li>
@@ -89,7 +89,7 @@
         <li>We do not have servers. None of the apps send your data to us.</li>
         <li>There is no account and no sign-up.</li>
         <li>There are no ads, no analytics, no crash-reporting services and no tracking tools in any of the apps.</li>
-        <li>Everything you enter is stored on your own devices (phone, watch, Windows PC, iPhone or Mac). The only exceptions are two optional Windows features that you turn on yourself: a calendar subscription downloads your calendar directly from your calendar provider, and the AI assistant sends the details of the tasks you ask it about directly to Anthropic, only when you click “✨” (sections 5.1 and 5.2).</li>
+        <li>Everything you enter is stored on your own devices (phone, watch, Windows PC, iPhone or Mac), and in device backups if you turn them on (see section 10). The only exceptions are two optional Windows features that you turn on yourself: a calendar subscription downloads your calendar directly from your calendar provider, and the AI assistant sends the details of the tasks you ask it about directly to Anthropic, only when you click “✨” (sections 5.1 and 5.2).</li>
         <li>The phone app shares data only with your own paired Wear OS watch, directly between your devices.</li>
         <li>Purchases are handled by Google Play, the Microsoft Store or Apple. We never see your payment details.</li>
       </ul>
@@ -118,7 +118,7 @@
     <p><strong>Foreground service.</strong> While the floating clock or the home-screen clock widget is in use, a service with a permanent notification keeps the clock hands moving. It does not collect data.</p>
     <p><strong>Notifications, exact alarms, full-screen alerts, vibration.</strong> Used to remind you about your tasks at the time you chose.</p>
     <p><strong>Start after reboot.</strong> Used to restore your reminders and the floating clock after the phone restarts.</p>
-    <p><strong>Internet and network state.</strong> Used only by Google Play services: Google Play Billing (to show prices and process subscriptions) and the Google Play In-App Review window (to let you rate the app). The app itself makes no other network requests.</p>
+    <p><strong>Internet and network state.</strong> Used only by Google Play services: Google Play Billing (to show prices and offers, including whether a free trial is available to you, and to process subscriptions) and the Google Play In-App Review window (to let you rate the app). The app itself makes no other network requests.</p>
 
     <h2>4. Wear OS watch and watch face</h2>
     <p><strong>Storage.</strong> The watch app keeps the data it receives from your phone, and your watch settings, in its private storage on the watch. When your phone is temporarily unreachable, the actions you take on the watch are kept there in a local queue of commands (up to 100 commands, each kept for no longer than 7 days) and are delivered to your phone as soon as it is reachable again.</p>
@@ -129,7 +129,7 @@
       <li>your day templates (names), so that you can apply one from the watch;</li>
       <li>the phone app's settings that can be viewed and changed on the watch: theme, language, date of birth, expected lifespan, life counter display, sound and vibration, the evening planning reminder and its time, the checklist display, and the countdown mode (life or a chosen project);</li>
       <li>the state of the current Pomodoro session (phase, remaining time, pause, round, and the name and color of the selected project);</li>
-      <li>whether you have Visdap Pro, so that the watch shows the same features as the phone.</li>
+      <li>whether you have Visdap Pro, so that the watch shows the same features as the phone, and the date until which the free version works on your installation (if any).</li>
     </ul>
     <p>The watch sends back the commands you give on it: add a task, mark a task done, snooze or move a task, check or uncheck a checklist item, apply a day template, change a phone app setting, and start, pause, resume, skip or stop a Pomodoro session. The watch's tiles and complications show this same data (for example your next task, day progress, days left and the Pomodoro timer) on your watch and watch face. This exchange happens only between your own paired devices; none of this data is sent to our servers or to anyone else, and we do not receive any of it.</p>
     <p><strong>Voice and keyboard input.</strong> When you add a task on the watch, the title is entered through the system input of Wear OS (voice or keyboard). Speech recognition is performed by the system, not by Visdap: the app has no microphone permission, never receives audio and gets only the resulting text.</p>
@@ -139,7 +139,7 @@
     <h2>5. Windows (Microsoft Store)</h2>
     <p><strong>Storage.</strong> On Windows the app keeps your data in the folder <code>%APPDATA%\TimeForLife</code> of your Windows user account. For the version installed from the Microsoft Store, Windows keeps this folder in the app's own private package storage. The folder contains:</p>
     <ul>
-      <li><code>clock_config.json</code> — your tasks, projects, day plans, life counter data and settings, plus automatic safety copies of this file (a <code>.bak</code> file and the <code>backups</code> subfolder) that protect your data if the PC shuts down unexpectedly;</li>
+      <li><code>clock_config.json</code> — your tasks, projects, day plans, life counter data and settings, plus automatic safety copies of this file (a <code>.bak</code> file and the <code>backups</code> subfolder) that protect your data if the PC shuts down unexpectedly; it also keeps a local flag (<code>legacy_free_grace</code>) that records whether this installation was made before Visdap moved to Pro, which decides until when the free version works;</li>
       <li><code>pomodoro.json</code> — focus (Pomodoro) sessions and the time worked on projects;</li>
       <li><code>license.json</code> — your Pro status;</li>
       <li><code>review.json</code> — the service record used to time the rating window;</li>
@@ -179,7 +179,7 @@
     <p><strong>No tracking.</strong> The iPhone and Mac apps contain no advertising, analytics or tracking code and do not collect data as defined by Apple's App Privacy requirements.</p>
 
     <h2>7. Purchases</h2>
-    <p>Visdap Pro is an auto-renewable subscription. Payment is always processed by the store you bought it from; we do not receive or store your card details or your store account information. The app stores only whether a subscription is active and the product identifier, on your device.</p>
+    <p>Visdap Pro is an auto-renewable subscription. Payment is always processed by the store you bought it from; we do not receive or store your card details or your store account information. The app stores only whether a subscription is active and the product identifier, on your device. The store tells the app which offers, such as a free trial, are available to you; the app does not save this information.</p>
     <ul>
       <li><strong>Android and Wear OS:</strong> Google Play Billing — see the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</li>
       <li><strong>Windows:</strong> the Microsoft Store, through your Microsoft account — see the <a href="https://privacy.microsoft.com/privacystatement" target="_blank">Microsoft Privacy Statement</a>.</li>
